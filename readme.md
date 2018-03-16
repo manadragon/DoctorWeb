@@ -9,7 +9,7 @@ This is example of study `node.js` with `maria database server` program for begi
     Personal wiki service.
  2. **second**
     None login WebBoard.
-    as like *wiki* **but** unauthorized post is [public post](#public-post)
+    as like *wiki* **but** unauthorized post is [public post.](#public-post) 
 
 ## *Discussion*
 > 
