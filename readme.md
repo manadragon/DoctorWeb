@@ -2,7 +2,7 @@
 
 ## *description*
 ---
-This is example of study **node.js** with **maria database server** program for beginner.
+This is example of study `**node.js**` with `**maria database server**` program for beginner.
 
 ## feature
 1. **first**
