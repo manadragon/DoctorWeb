@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+     meta(charset='utf-8')
+    body
+      H1 
+       a(href='/topic') Dr' Web 
+      ul
+        each it in topics        
+          li
+           - id=encodeURIComponent(it.id)
+           a(href='/topic/'+id)=it.title
+      article      
+        form(action='/posting/add' method='post')
+          p
+          input#title(type='text' name='title' placeholder='제목을 입력하세요')
+          p
+          textarea#description(name="description" placeholder ="설명을 입력하세요", cols="30", rows="10")
+          p
+          input#author(type='text' name='author' placeholder='저자를입력하세요')
+          p
+          input(type='submit')
+      
+        

@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+     meta(charset='utf-8')
+     link(href='/css/app.css', rel='stylesheet')
+    body
+      H1 
+       a(href='/topic') Dr' Web 
+      ul
+        each it in topics        
+          li
+           - id=encodeURIComponent(it.id)
+           a.aList(href='/topic/'+id)=it.title
+      article
+      - if (topic)
+            H2#title=topic.title
+            div#description=topic.description
+            div#author=topic.author
+      ul 
+        li
+         a.aCmd#add(href='/topic/add') 추가하기
+        - if(topic.topicid)
+          li
+            a.aCmd#edit(href='/topic/'+topic.topicid+'/edit') 편집하기
+          li
+            a.aCmd#delete(href='/topic/'+topic.topicid+'/delete') 삭제하기
+    
+        

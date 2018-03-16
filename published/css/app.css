@@ -1,0 +1,34 @@
+a {
+    text-decoration:none;
+}
+/* unvisited link */
+a:link {
+    color: red;    
+}
+
+/* visited link */
+a:visited {
+    color: green;    
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+.aCmd {
+    color: black;
+    border: 3 solid darkblue;
+    background-color: powderblue;
+}
+
+.aCmd:hover {
+    color: black;
+    border: 3 solid darkblue;
+    background-color: hotpink;
+}

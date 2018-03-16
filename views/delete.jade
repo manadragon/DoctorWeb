@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+     meta(charset='utf-8')
+    body
+      H1 
+       a(href='/topic') Dr' Web 
+      ul
+        each it in topics        
+          li
+           - id=encodeURIComponent(it.id)
+           a.aList(href='/topic/'+id)=it.title
+      article
+        H2#title=topic.title+'삭제하시겠습니까?'
+        form(action='/posting/delete' method='post')          
+          input(type='hidden' name="id" value=topic.topicid)
+          input(type='submit' value='예' )
+          a(href='/topic') 취소
+    

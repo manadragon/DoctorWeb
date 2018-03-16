@@ -1,0 +1,4 @@
+# exception git comments
+log/
+node_modules/
+package-lock.json
