@@ -11,7 +11,7 @@ This is example of study **node.js** with **maria database server** program for 
     > writed for your self memoris or 
 1. **second**
     > none login WebBoard as like *wiki* 
-    > **but** unauthorized post is [public post](#public_post)
+    > **but** unauthorized post is [public post](#public-post)
 
 ## *discussion*
 > 
