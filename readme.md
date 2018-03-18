@@ -12,7 +12,7 @@ This is example of study `node.js` with `maria database server` program for begi
     as like *wiki* **but** unauthorized post is [public post.](#public-post) 
 
 ## *Discussion*
-> 
+> 2018.3.18 login and session with mariadb.
 
 ## Concepts
 ### **Public post**
