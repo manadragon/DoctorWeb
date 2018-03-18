@@ -5,7 +5,7 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const fs = require('fs');
 const path = require('path');
-const rfs=require('rotating-file-stream');
+const rfs = require('rotating-file-stream');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const MySQLStore = require('express-mysql-session')(session);
@@ -24,15 +24,15 @@ app.use(cookieParser());
 var logDirectory = path.join(__dirname, 'log');
 // ensure log directory exists
 fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
- 
+
 // create a rotating write stream
 var accessLogStream = rfs('access.log', {
   interval: '1d', // rotate daily
   path: logDirectory
 });
- 
+
 // setup the logger
-app.use(logger('combined', {stream: accessLogStream}));
+app.use(logger('combined', { stream: accessLogStream }));
 
 
 // parse application/x-www-form-urlencoded
@@ -65,7 +65,6 @@ connection.connect();
 // 라우팅시작
 // get방식 
 app.get(['/', '/:node', '/:node/:id', '/:node/:id/:cmd', '*'], (req, res) => {
-
   var sql = 'SELECT * FROM topic ';
   connection.query(sql, (err, resultTOPIC) => {
     if (err) { console.log(err); throw err; };
