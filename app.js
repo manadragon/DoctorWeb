@@ -7,7 +7,8 @@ const fs = require('fs');
 const path = require('path');
 const rfs=require('rotating-file-stream');
 const cookieParser = require('cookie-parser');
-
+const session = require('express-session');
+const MySQLStore = require('express-mysql-session')(session);
 const mysub = require('./mysub.js');
 
 //express 설정
