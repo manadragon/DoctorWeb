@@ -16,7 +16,6 @@ var app = express();
 app.use(express.static('published')); // static파일 경로설정
 // 끝.
 
-
 // 쿠키정보
 app.use(cookieParser());
 
@@ -172,4 +171,3 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Dr Web listening PORT ${mysub.getIPAddress()}:${PORT}`)
 });
-
